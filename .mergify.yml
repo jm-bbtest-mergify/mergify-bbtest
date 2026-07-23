@@ -1,1 +1,10 @@
-pull_request_rules: []
+queue_rules:
+  - name: default
+    merge_method: squash
+pull_request_rules:
+  - name: automerge
+    conditions:
+      - label=ready-to-merge
+    actions:
+      queue:
+        name: default
