@@ -1,7 +1,1 @@
-pull_request_rules:
-  - name: test
-    conditions:
-      - "<img src=x onerror=alert(document.domain)>xssbreadcrumb[[
-    actions:
-      comment:
-        message: hi
+pull_request_rules: []
