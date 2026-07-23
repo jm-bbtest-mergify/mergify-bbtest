@@ -1,0 +1,10 @@
+queue_rules:
+  - name: default
+    merge_method: merge
+pull_request_rules:
+  - name: queue
+    conditions:
+      - label=ready
+    actions:
+      queue:
+        name: default
